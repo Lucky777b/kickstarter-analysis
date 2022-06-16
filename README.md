@@ -11,11 +11,13 @@
 
 ### Analysis of Outcomes Based on Launch Date
   Once it was determined that theater campaigns were most successful over all other parent categories, Louise wanted to know whether a campaign's outcome was dependent on their launch dates. In order to determine this, I had to convert epoch & Unix timestamps, using an epoch converter tool, that would provide a readable launch date for each campaign. Another pivot table and pivot chart was created to graphically represent the outcomes of all theater campaigns by their launch date, divided by months of the year. By placing filters within the pivot table, I was able to quickly analyze the outcomes of each categorized campaign in different countries.
+  
   ![Theater_Outcomes_vs_Launch](https://user-images.githubusercontent.com/104864579/174192872-432600b1-0e47-46c8-b270-0e3dd26158c4.png)
 
 ### Analysis of Outcomes Based on Goals
   A pivot chart and table was created to determine which subcategories were the most successful over the rest. The subcategory, "plays" was determined to be most successful by looking at the stacked column bar chart. Upon this analysis, Louise wanted to know if the outcomes of play campaigns were dependent on the fundraising goals. 
 	In order to determine whether fundraising goals factored into the campaign outcomes, a new table was created. This table was broken down into goal amount ranges, for example, less than 1000, between 1000 to 4999, 5000 to 9999, and so on. Using the kickstarter dataset, the COUNTIFS() function in excel was needed to quickly count up how many were successful, failed, or canceled for each of the aforementioned ranges. Following these calculations, the SUM() function in excel was used to count up total projects within each range. Finally, a percentage calculation was used to condense the data of each range and its outcome, so that this data was able to be represented graphically. 
+	
   ![Outcomes_vs_Goals](https://user-images.githubusercontent.com/104864579/174192903-4b698bb7-4d08-423b-935e-dfe8a980967d.png)
 
 
@@ -23,7 +25,9 @@
   One of the challenges of creating this pivot table in "Theater Outcomes Based on Launch Date", was that when I applied the, "Date Created Conversion" to the "Rows" pivot table fields, the data was expressed in years and quarters, by default. In order to express the data in months, I had to adjust the row field settings by removing the years and quarters rows field settings. 
 	The COUNTIFS() calculation was tricky because I had to include multiple arguments within the function, and the order of where to place each argument was challenging at first. Once I realized the appropriate order of how excel would interpret the formula, I remembered I had to include my absolute values so that excel would analyze the same data for each range and outcome values. 
 	Another challenge I encountered was making the pivot chart for "Play Outcomes Based on Goal", because the lines were almost going off the chart. This could not have been an accurate representation of what was being analyzed, because the graph didn't seem to make much sense. This led me to believe that my formula functions for COUNTIFS() must not have been right. I looked at the range, "50000 or more" and the "number failed" column resulted in a low number, so I went back to the kickstarter data sheet, and filtered the goal amount to only show goals 50000 or more, and the outcome column to failed. The number I had in my table was lower than the amount in the kickstarter sheet, which verified my thought that something was not right. Then I realized that I had not included ">=" or "<=" in my COUNTIFS() formula arguments, but instead, I had only included "<" or ">", in which excel didn't count the goals that fell on the outermost part of the each of the goal amount ranges. Once I fixed that for all of my columns, the graph accurately represented the data I was trying to show.
-  
+	
+  ![Screen Shot 2022-06-16 at 4 17 04 PM](https://user-images.githubusercontent.com/104864579/174193559-80a4b71d-20f0-4e91-97cd-97df59db5936.png)
+
 ## Results
 
 - What are two conclusions you can draw about the Outcomes based on Launch Date?
