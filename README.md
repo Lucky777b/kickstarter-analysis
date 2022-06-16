@@ -31,14 +31,18 @@
 ## Results
 
 - What are two conclusions you can draw about the Outcomes based on Launch Date?
+
   One conclusion I can draw about the outcomes based on launch date data analysis, is that the month of May was the most successful time to launch a theater campaign. Another conclusion I can draw from this chart, is that summer time months have more successful theater campaign outcomes as opposed to launching theater campaigns in the winter, in which the amount failed vs. successful seem to result in a similar outcome. 
 	
 - What can you conclude about the Outcomes based on Goals?
+
   I can conclude that play outcomes based on goal are more successful when the goal is set at 4999 or lower, so a lower goal amount results in a higher success rate. Another conclusion is that a goal set at 49999 or higher, results in an increasingly lower success rate and an increasingly higher fail rate. 
   
 - What are some limitations of this dataset?
+
   One limitation to this dataset is that countries are represented but not actual locations within each country. This could be problematic because it is trying to be determined when and where each campaigns might be more successful, which can't be found by looking at the country as a whole. 
 	Another limitation is that the data is representative of a dataset over the course of 9 years, which means the sample size for each year might not be proportionally distributed. Also, the sample size for each country doesn't appear to have the same amount of sample size from each, which makes it hard to compare campaign outcome success to one another. 
   
 - What are some other possible tables and/or graphs that we could create?
+
   Other possible tables and/or graphs that could be created would be to identify which countries had a higher amount of backers that led to successful campaign outcomes, or which countries had higher average donations. 
